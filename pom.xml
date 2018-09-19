@@ -7,8 +7,6 @@
     <artifactId>datacource-proxy</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>AppFuse Core Application</name>
-    <url>http://www.mycompany.com</url>
 
     <prerequisites>
         <maven>2.0.6</maven>
@@ -48,14 +46,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- spring jdbc begin -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>4.0.2.RELEASE</version>
-        </dependency>
-        <!-- spring jdbc end -->
-
         <!--C3P0-->
         <dependency>
             <groupId>com.mchange</groupId>
@@ -63,50 +53,17 @@
             <version>0.9.5.2</version>
         </dependency>
 
-        <!-- common-lang begin -->
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-net</groupId>
-            <artifactId>commons-net</artifactId>
-            <version>3.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-csv</artifactId>
-            <version>1.1</version>
-        </dependency>
-
+        <!-- apache commons -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
             <version>4.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>LATEST</version>
         </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>LATEST</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>LATEST</version>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>commons-collections</groupId>-->
-            <!--<artifactId>commons-collections</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
-        <!-- common-lang end -->
 
         <!--google  guaua-->
         <dependency>
@@ -117,25 +74,12 @@
 
         <!--测试 -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
         <!--测试结束 -->
-
-        <!--mysql驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>LATEST</version>
-        </dependency>
 
         <!-- AOP begin -->
         <dependency>
@@ -195,23 +139,6 @@
             <artifactId>spring-context-support</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
-        <!-- 配置文件读取 begin -->
-        <dependency>
-            <groupId>commons-configuration</groupId>
-            <artifactId>commons-configuration</artifactId>
-            <version>1.8</version>
-        </dependency>
-        <!-- 配置文件读取 end -->
-
-        <!-- servlet begin -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- servlet end -->
     </dependencies>
 
 </project>

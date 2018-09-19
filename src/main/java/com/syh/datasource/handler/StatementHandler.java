@@ -1,20 +1,20 @@
 package com.syh.datasource.handler;
 
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.collections4.MapUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.util.List;
-import java.util.Map;
 
 public class StatementHandler implements InvocationHandler {
+//    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+
     private Object pps;
     private List<Object> paramterList = Lists.newArrayList();
     @Override

@@ -1,7 +1,12 @@
 package com.syh.datasource;
 
+import com.google.common.base.Strings;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.syh.datasource.service.DataSourceProxyService;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
@@ -10,6 +15,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DateSourceTest {
+//    private static final Logger LOGGER = LoggerFactory.getLogger(DateSourceTest.class);
+
     private static String user = "root";
     private static String pwd = "000000";
     private static String url = "jdbc:mysql://localhost:3306/test";
@@ -32,6 +39,8 @@ public class DateSourceTest {
         System.out.println("successNum: " + successNum);
 
         ResultSet resultSet2 = psProxy.executeQuery();
+
+//        LOGGER.info("1111111");
     }
 
     public static ComboPooledDataSource getDataSource() {

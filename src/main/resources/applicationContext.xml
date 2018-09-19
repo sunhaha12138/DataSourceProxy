@@ -18,6 +18,6 @@
     <!--开启基于@AspectJq切面的注解处理器-->
     <aop:aspectj-autoproxy/>
 
-    <bean id="dataSourceTest" class="com.syh.datasource.test.DataSourceTest"/>
+    <bean id="dataSourceTest" class="com.syh.datasource.DateSourceTest"/>
     <!--<bean id="transactionAspect" class="com.sunyh.data.transaction.TransactionAspect"/>-->
 </beans>
